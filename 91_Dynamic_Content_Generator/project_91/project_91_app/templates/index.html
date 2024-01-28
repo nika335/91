@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>welcome madlib</h2>
+    <form method="post">
+        {% csrf_token %}
+        <p><label>Enter a noun: </label>
+        <input type="text" required, name="noun"></p>
+        <p><label>Enter a verb: </label>
+        <input type="text" required, name="verb"></p>
+        <p><label>Enter an adjective: </label>
+        <input type="text" required, name="adjective"></p>
+        <p><label>Enter an adverb: </label>
+        <input type="text" required, name="adverb"></p>
+        <input type="submit" value="submit">
+        
+    </form>
+</body>
+</html>
